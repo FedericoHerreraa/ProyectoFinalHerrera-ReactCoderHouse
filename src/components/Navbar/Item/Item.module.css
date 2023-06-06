@@ -1,0 +1,62 @@
+
+
+.containerProduct {
+    background-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    margin-bottom: 30px;
+    width: 16rem;
+}
+
+.containerProduct:hover {
+    opacity: 0.9;
+}
+
+.img {
+    width: 13rem;
+    height: 13rem;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.name {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.price {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.description {
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.button {
+    padding: 7px 10px 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #466187 ;
+    text-decoration: none;
+    color: white;
+
+}
+
+.button:hover {
+    background-color: #26364d;
+
+}

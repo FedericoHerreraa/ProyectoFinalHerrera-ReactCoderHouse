@@ -1,0 +1,43 @@
+
+.containerCount {
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    width: 95%;
+}
+
+.carritoCount {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    background-color: cadetblue;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.carritoCount button {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    width: 30px;
+    height: 20px;
+}
+
+.product {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
+}
+.buttonCarrito {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+
+}
