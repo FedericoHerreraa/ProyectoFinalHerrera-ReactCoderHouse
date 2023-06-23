@@ -2,7 +2,7 @@ import stylesItem from './Item.module.css'
 import { Link } from 'react-router-dom';
 
 
-const Item = ({ id,img,name,price,description }) => {
+const Item = ({ id,img,name,price }) => {
     return (
         <div key={id}>
             <div className={stylesItem.containerProduct}>
@@ -13,7 +13,6 @@ const Item = ({ id,img,name,price,description }) => {
                     <h4 className={stylesItem.name} >Nombre: {name}</h4>
                     <p className={stylesItem.price}>Precio: ${price}</p>
                 </div>
-                <p className={stylesItem.description}>{description}</p>
                 <div className={stylesItem.buttonContainer}>
                     <Link to={`/item/${id}`} className={stylesItem.button}>Detalle</Link>
                 </div>

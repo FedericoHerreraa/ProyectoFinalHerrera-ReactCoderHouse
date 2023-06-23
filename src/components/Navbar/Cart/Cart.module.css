@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container button {
+    width: 10%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.container button:hover {
+    cursor: pointer;
+}
+
+.title {
+    margin: 20px;
+}

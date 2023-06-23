@@ -1,5 +1,23 @@
 
 .container {
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 70%;
+}
+
+.title {
+    margin: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: antiquewhite;
+    padding: 5px 25px 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 7px 5px 20px 0px;
+}
+
+.loading {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }

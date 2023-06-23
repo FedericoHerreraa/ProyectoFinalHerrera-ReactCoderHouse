@@ -3,12 +3,26 @@
     flex-direction: column;
 }
 
-.greeting {
+.searchBarContainer {
     display: flex;
     justify-content: center;
+}
+
+.searchBar {
+    width: 35%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
 
 .itemCount {
     display: flex;
     justify-content: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }

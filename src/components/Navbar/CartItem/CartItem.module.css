@@ -1,0 +1,48 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6b5148;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.productInfo img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.productElse {
+    display: flex;
+    margin: 10px;
+    color: white;
+    align-items: center;
+}
+
+.productElse p {
+    margin-right: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+.buttonContainer button {
+    background-color: #ab9a95;
+}
+
+.buttonContainer button:hover {
+    cursor: pointer;
+}
