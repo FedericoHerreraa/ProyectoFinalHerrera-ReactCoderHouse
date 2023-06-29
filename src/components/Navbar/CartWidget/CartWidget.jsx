@@ -4,12 +4,12 @@ import { useCart } from '../../../context/CartContext'
 
 const CartWidget = () => {
     const { totalQuantity } = useCart()
-    const total = totalQuantity
+    const total = totalQuantity()
 
     return (
         <div className={stylesCart.carrito}>
             <img src={cart}/>
-            {total}
+            <p className={stylesCart.count}>{total}</p>
         </div>
         
     )

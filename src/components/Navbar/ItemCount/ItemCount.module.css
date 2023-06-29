@@ -1,30 +1,45 @@
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .containerCount {
-    background-color: grey;
+    border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
-    width: 95%;
+    width: 100%;
 }
 
 .carritoCount {
     display: flex;
-    text-decoration: none;
+    flex-direction: row;
     align-items: center;
-    background-color: cadetblue;
     justify-content: center;
-    border-radius: 5px;
+    text-decoration: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+
+.carritoCount p {
+    margin-top: 16px;
 }
 
 .carritoCount button {
     margin-right: 20px;
     margin-left: 20px;
     text-decoration: none;
+    border: none;
     width: 30px;
     height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid grey;
 }
 
 .product {
-    background-color: beige;
     padding: 10px;
     border-radius: 10px;
     display: flex;

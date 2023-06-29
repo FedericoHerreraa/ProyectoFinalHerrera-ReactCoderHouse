@@ -30,11 +30,12 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
                     <img className={stylesItemDetail.img} src={img}/>
                 </div>
             </div>
-            <div>
+            <div className={stylesItemDetail.containerDetail}>
                 <div className={stylesItemDetail.information}>
-                    <p>Categoria: {category}</p>
-                    <p>Precio: {price}</p>
-                    <p>Descripcion: {description}</p>
+                    <p><b className={stylesItemDetail.options}>Marca: </b>{category}</p>
+                    <p><b className={stylesItemDetail.options}>Precio: </b>{price}</p>
+                    <p><b className={stylesItemDetail.options}>Descripcion: </b>{description}</p>
+                    <p><b className={stylesItemDetail.options}>Stock disponible: </b>{stock}</p>
                 </div>
                 <div className={stylesItemDetail.containerCarrito}>
                     {

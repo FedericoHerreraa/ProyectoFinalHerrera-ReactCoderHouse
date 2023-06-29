@@ -1,4 +1,9 @@
 
+.containerAll {
+    margin-left: 180px;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -18,5 +23,34 @@
 }
 
 .title {
-    margin: 20px;
+    margin: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #47331f;
+    padding: 5px 25px 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 7px 5px 20px 0px;
+    color: #b3b5b4;
+}
+
+.titleEmpty {
+    margin: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #47331f;
+    padding: 5px 25px 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 7px 5px 20px 0px;
+    color: #b3b5b4;
+}
+
+.return {
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
 }

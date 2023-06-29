@@ -1,37 +1,52 @@
 
+.container {
+    text-decoration: non;
+}
 
 .containerProduct {
-    background-color: #d4d4d4;
-    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #edebeb;
+    border-radius: 5px;
     margin-left: 10px;
     transition: all 0.2s;
     margin-bottom: 30px;
     width: 16rem;
-    border: 1px solid grey;
 }
 
 .containerProduct:hover {
-    opacity: 0.9;
+    box-shadow: 0px 0px 20px 0px;
+    cursor: pointer;
 }
 
 .img {
-    width: 13rem;
-    height: 13rem;
+    width: 15rem;
+    height: 14rem;
     padding: 10px;
-    border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
-    margin-left: 12px;
+    margin-left: 9px;
+    margin-bottom: 10px;
+}
+
+.namePrice {
+    padding-bottom: 30px;
 }
 
 .name {
     font-size: 15px;
     margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 15px;
 }
 
 .price {
     font-size: 15px;
     margin-left: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .description {

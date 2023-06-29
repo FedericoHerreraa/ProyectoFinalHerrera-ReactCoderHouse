@@ -3,9 +3,11 @@
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #6b5148;
     margin: 10px;
     border-radius: 10px;
+    border: 1px solid black;
 }
 
 .productInfo {
@@ -22,10 +24,11 @@
 }
 
 .productElse {
-    display: flex;
-    margin: 10px;
     color: white;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .productElse p {
@@ -41,6 +44,9 @@
 
 .buttonContainer button {
     background-color: #ab9a95;
+    border: 1px solid white;
+    border-radius: 4px;
+
 }
 
 .buttonContainer button:hover {

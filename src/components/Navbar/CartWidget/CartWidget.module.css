@@ -1,17 +1,28 @@
 .carrito {
-    padding-right: 10px;
-    padding-left: 10px;
     border-radius: 10px;
+    transition: all 0.2s;
+    margin-right: 20px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
-    transition: all 0.2s;
-    margin-right: 40px;
+    justify-self: center;
+    text-decoration: none;
+    padding: 0px 8px 0px 8px;
 }
 
 .carrito:hover {
     background-color: grey;
 }
 
+
 .carrito img {
-    margin-right: 7px;
+    margin-right: 3px;
 }
+
+.count {
+    color: black;
+    margin-top: 15px;
+    text-decoration: underline;
+    text-decoration-color: #c9c9c7;
+}
+

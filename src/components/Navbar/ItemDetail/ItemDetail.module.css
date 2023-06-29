@@ -5,6 +5,7 @@
     border: 1px solid grey;
     display: flex;
     justify-content: space-between;
+    box-shadow: 5px 10px 25px 5px;
 }
 
 .containerCarrito {
@@ -16,7 +17,7 @@
     color: white;
     display: flex;
     justify-content: center;
-    background-color: cornflowerblue;
+    background-color: darkcyan;
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
     transition: all 0.2s;
@@ -54,5 +55,17 @@
 
 .titleImg {
     padding-right: 25px;
-    border-right: 2px solid grey;
+    border-right: 1px solid #47331f;
+    margin-right: 30px;
+}
+
+.options {
+    font-weight: 700;
+}
+
+.containerDetail {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 100px;
 }

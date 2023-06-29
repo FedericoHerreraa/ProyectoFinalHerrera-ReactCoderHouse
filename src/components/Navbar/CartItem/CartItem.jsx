@@ -4,6 +4,7 @@ import stylesCartItem from './CartItem.module.css'
 
 const CartItem = ({ id, name, quantity, price }) => {
     const { removeItem } = useCart()
+    let newPrice = price * quantity
 
     return (
         <div key={id} className={stylesCartItem.container}>
@@ -12,7 +13,13 @@ const CartItem = ({ id, name, quantity, price }) => {
             </div>
             <div className={stylesCartItem.productElse}>
                 <p>Cantidad: {quantity}</p>
-                <p>Precio: ${price}</p>
+                {
+                    quantity > 1 ? (
+                        <p>Precio: ${newPrice}</p>
+                    ) : (            
+                        <p>Precio: ${price}</p>  
+                    )
+                }
             </div>
             <div className={stylesCartItem.buttonContainer}>
                 <button onClick={() => removeItem(id)}>X</button>
