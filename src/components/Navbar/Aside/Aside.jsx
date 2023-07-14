@@ -1,22 +1,27 @@
 import stylesAside from './Aside.module.css'
-import { NavLink} from 'react-router-dom'
+import { NavLink, Link} from 'react-router-dom'
 import FilterMenu from '../Filter/FilterMenu'
+import CartWidget from '../CartWidget/CartWidget.jsx'
+
 
 const Aside = () => {
     return (
         <>
             <div className={stylesAside.container}>
                 <div className={stylesAside.subContainer}>
+                    <div className={stylesAside.buttonCarrito}>
+                        <Link to={'/cart'}><CartWidget/></Link>
+                    </div>
                     <div className={stylesAside.containerLink}>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPpJREFUSEvt07tKBDEUBuBvn8LCwgvaKCJYuljaWfo49r6MrZ2daCXYqLAIXgoLn0IJzEB2yE5OxO02zTBD8n8nmZOJJY/JkvO1AGu4xg/O8B0pLgqk8Htsd6FvOI4gESCF32IXnx2wgVec1JAakFf+hWkH3GEd1Z2MAaXwfAchZBEwFt7/23RMVaQERMLDyBBoCQ8hOZB3S1q8hY9Ir2MT793cue7qgfR8xGEWWOuwoZ0uYD+ecJBecuABR/8E3OA0B/Jq+kr+uoO5daWQFbA6ooVXr9gcpS56xl7wBg+nvWA//1gCznGJnUZkhgtc1YDG3PHprbe1Gf8FEWVFGWqjs0wAAAAASUVORK5CYII="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARRJREFUSEvtlLFOwzAURc/9CgaGAoIFhJAYixi7deRz2PmZrmxsFUxILC0SQoJ26NCveMiRE6XBjZ8R3eolSvR8jp99HbHjoR3zcQvM7AB4BAwYS1p7FucSRPgLcBKhX8DQI8kKInwKnAHLKBgAn8BtTtIr6Kx8BdxEwTNwCGQ72SpIwSVVHZhZ6MAlSQr64PXBeiW/BB54iWRDUAL3ShpBJy1h/rGkhSfrZnYEfMfajXRVAjMLzzfgqgZKyka4LTezcAHrMZN0GV7aglfg+p8ET5JGjSC1kr920J2XSlHV6l7QnGU3hnUa9lvUt0Vz4NxzgxM175Iu2t9TMb0DHoDTQskHcC9p0isohGbLi/43WVqi4AcdgqsZWC8YwQAAAABJRU5ErkJggg=="/>
                         <NavLink to={'/'} className={stylesAside.options}>Home</NavLink>
                     </div>
                     <div className={stylesAside.containerLink}>
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASRJREFUSEu11T8uBVEUgPHfYwtIJCLRobEGhQVIVDagUQiFggqvQSJRaBQqhTVQWIJGT0EkrEDiT67ME5l335t7zczU537fuefcM6ej5a/TMl9MsII9zNWQ32IxnI8J7jFfA947+sOOCb4agP+ycwX7OCsSWMfOkGSyb7CJkxIwCA4GSPoEVaUZx1sJNonnpgQB9lKCjeE1VdCLG3STbRyWYKu4bEoQOF2cYhRLOMJEqqCqB7mvN7vJQfCIh8I0g+mmnukVLnCNzwI6UpRpDcsRUdIcvCMM1HlFfbZwXIpJKtFu0diU+och3PgTmCSYwlMKHQu4GyaIzUHOvgg9+cgVJCYfDUtqciuC1hdOWJnhvz9bI/2bYkaiG60Gt/9oziv5l/gbq9wwGakzn5gAAAAASUVORK5CYII="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAT1JREFUSEu1lj0uBVEUx39/toDkJSLRobEGhQVIVDageYVQKKh8NEgkCo1CpbAGCkvQ6CmIhBVIOHKemXiZuW/mzrsztz7n/zv3fNxzRcdHHetTApjZOnAALCbAHyStuH8I8AQsJYgPXCUNtEMASxVPARwCl1kAfWBvVDDj3GBb0vmwoJk54CgEKQHMrC4105I+C4Ae8NYWoCfpvQCYAj6iALlRxU12JZ0UABvATVsA1zkGLoBJYBU4BWaiABE1aNS94xTZAS/Ac0aaB+baatNb4Bq4k/TjomY2kaVpE1grgmLn4AvoS7qqyo+Z7QBnwzaxKdqX5IWtPWbmQ7iVG8YCZiW91qr/pWwZeBwJCM1BHkUkwGvy3QgQI9xWFzVmVXVR5wvHV6a/+wuNw/53uJfkT0l5oyWIBl07/1X8AmWIhxmV05BPAAAAAElFTkSuQmCC"/>
                         <NavLink to={'/contact'} className={stylesAside.options}>Contact</NavLink>
                     </div>
                     <div className={stylesAside.containerLink}>
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAS1JREFUSEvFlU1qAkEQhT+jJKeICiFZ5RSuvITGjblT/sifl3CRa4gaVPAcEsKDbuhpuofqmMFZDd1V9d6rv27R8NdqOD4nA+gAc2BgVPgFDIFDbJ9TcA88GIN7M/k8WQDEfgN0nbH+b4CfDOAd8AbsgatYRUrBFHgEvoEz5zQCZhkA2SyBa0C+z6FdDBCyFzM5vzpFf1IRA/jc+7TofgdcAmPgs0bF2qmt1CIECNmHwSbHqAgBYva+qO1jVIQASkUfSBXUq7B27talqzLJdQBK2bs1OpAEqEvRyjFSZ32UFPo/i+xVVgaupE2L2Utp3aCp2OfAi2HQkuxTADrzq0KDcwH0DENmXhUCKF12WfY5BTpvdF17FQu3IS3trza+LXlwLEFNNid7k03sLEa/+FlgGYMvvtQAAAAASUVORK5CYII="/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUZJREFUSEvFlUlOw0AURF8BglMwSAhWnIIVl0jCJrkTkxgvwYJrIAYBEudAfNRRd7A7HeebYMUr26r+VfWnFh0/6jg+yyEwszXgHjh0OnwAjiR95fiiAzMbASfO4Ak2knQ2lyCqfwO2Iji870v6LhGa2QC4Aj6B3dzFlAMzGwKnwCuwEg4BPUl3MwgC5gnYA4aSzqu4GkGmPigLhy+BP7vICVLuxwFh3GUfwCbQl3Tb4OIluq3VYkKQqZ8EM7PjRVxUCWrqU1HNbHURF1WCkIqdUkErLryd+y4pNMfvJJtZE0EfuPZGB4oETSl6jgUcSLppU+j/LHJyWRu4Nm3aWn2tBuEja9UesA5cOAatqH6KIJKkVREGZwPYdgyZb1UUXIRf89bETPVFB5Gku3VdcfEYN6Sn/UMbH7gvHE9EL2Y5d7JXnQf3AwD4zBnGd6SjAAAAAElFTkSuQmCC"/>
                         <NavLink to={'/aboutUs'} className={stylesAside.options}>About us</NavLink>
                     </div>
                     <div className={stylesAside.containerFilter}>

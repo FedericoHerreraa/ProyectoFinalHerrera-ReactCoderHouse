@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const FilterMenu = () => {
     return (
         <div>
-            <h4>Filtros:</h4>
+            <h4 className={stylesFilterMenu.title}>Filtros:</h4>
             <div className={stylesFilterMenu.container}>
                 <NavLink to={'/'} className={({ isActive }) => isActive? stylesFilterMenu.active : stylesFilterMenu.option}>Todos</NavLink>
                 <NavLink to={'/category/RayBan'} className={({ isActive }) => isActive? stylesFilterMenu.active : stylesFilterMenu.option}>RayBan</NavLink>

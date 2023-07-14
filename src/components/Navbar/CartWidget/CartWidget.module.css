@@ -5,13 +5,13 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     text-decoration: none;
-    padding: 0px 8px 0px 8px;
+    padding: 0px 10px 0px 10px;
 }
 
 .carrito:hover {
-    background-color: grey;
+    background-color: #4a4a4a;
 }
 
 
@@ -23,6 +23,6 @@
     color: black;
     margin-top: 15px;
     text-decoration: underline;
-    text-decoration-color: #c9c9c7;
+    text-decoration-color: #6e6e6e;
 }
 

@@ -1,1 +1,37 @@
 
+
+.container {
+    position: relative;
+    top: 1010px;
+    left: 150px;
+    margin-bottom: 0px;
+    height: 100px;
+    background-image: linear-gradient(180deg, #ffffff 0, #fffbfd 16.67%, #f8eff1 33.33%, #e3e3e3 50%, #ced7d4 66.67%, #bccbc6 83.33%, #acc1b8 100%);
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    margin-top: 25px;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.red img {
+    margin-right: 10px;
+}
+
+.red p {
+    margin-top: 15px;
+
+}
+
+.red p a {
+    text-decoration: none;
+    color: black;
+}

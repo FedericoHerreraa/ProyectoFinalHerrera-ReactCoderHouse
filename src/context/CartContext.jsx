@@ -11,10 +11,11 @@ export const CartProvider = ({ children }) => {
     const addItem = (item) => {
         !isInCart(item.id) ? (
             setCart(prev => {
-              return [...prev,item]
+                return [...prev,item]
             })
         ) : (
-            console.error('El producto ya existe en el carrito')
+            console.error("El producto ya esta en el carrito")
+           
         )
     }
 

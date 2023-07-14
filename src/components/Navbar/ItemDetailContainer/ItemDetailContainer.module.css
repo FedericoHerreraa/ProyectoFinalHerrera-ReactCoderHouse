@@ -14,16 +14,20 @@
     margin: 15px;
     font-weight: 700;
     font-size: 20px;
-    background-color: #47331f;
+    background-color: #b9bf93;
     padding: 5px 25px 5px 15px;
     border-radius: 10px;
     display: inline-block;
     box-shadow: 7px 5px 20px 0px;
-    color: #b3b5b4;
+    color: black;
+    margin-top: 100px;
 }
 
 .loading {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+}
+
+.spinner {
+    padding-top: 100px;
 }

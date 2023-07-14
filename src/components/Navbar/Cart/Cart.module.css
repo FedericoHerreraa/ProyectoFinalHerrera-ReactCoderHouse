@@ -11,15 +11,26 @@
     align-items: center;
 }
 
-.container button {
-    width: 10%;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    border: 1px solid grey;
+.buttons {
+    display: flex;
+
 }
 
-.container button:hover {
-    cursor: pointer;
+.checkout {
+    margin-right: 30px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+
+}
+
+.clear {
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: grey;
+
 }
 
 .title {
@@ -32,6 +43,7 @@
     display: inline-block;
     box-shadow: 7px 5px 20px 0px;
     color: #b3b5b4;
+    margin-top: 100px;
 }
 
 .titleEmpty {
@@ -44,6 +56,7 @@
     display: inline-block;
     box-shadow: 7px 5px 20px 0px;
     color: #b3b5b4;
+    margin-top: 100px;
 }
 
 .return {
