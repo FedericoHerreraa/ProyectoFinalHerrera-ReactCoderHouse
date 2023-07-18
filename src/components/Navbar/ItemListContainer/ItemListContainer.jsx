@@ -1,5 +1,5 @@
 import ItemList from '../ItemList/ItemList'
-import stylesitemlistcontainer from './itemListContainer.module.css'
+import stylesitemlistcontainer from './itemlistcontainer.module.css'
 import { useParams } from "react-router-dom"
 import { getProducts } from "../../../service/firebase/firestore/products"
 import { useAsync } from "../../../hooks/useAsync"
