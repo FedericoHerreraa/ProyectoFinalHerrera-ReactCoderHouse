@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import stylesCheckoutForm from './CheckoutForm.module.css'
-
-
+import styles from './CheckoutForm.module.css'
 
 const CheckoutForm = ({ onConfirm }) => {
     const [name,setName] = useState('')
@@ -19,9 +17,9 @@ const CheckoutForm = ({ onConfirm }) => {
     }
 
     return (
-        <div className={stylesCheckoutForm.container}>
+        <div className={styles.container}>
             <form onSubmit={handleConfirm}>
-                <div className={stylesCheckoutForm.input}>
+                <div className={styles.input}>
                     <label htmlFor="">Nombre:</label>
                     <input 
                         type="text"
@@ -29,21 +27,21 @@ const CheckoutForm = ({ onConfirm }) => {
                         onChange={({ target }) => setName(target.value)} 
                     />
                 </div>
-                <div className={stylesCheckoutForm.input}>
+                <div className={styles.input}>
                     <label htmlFor="">Telefono:</label>
                     <input type="number" 
                         value={phone}
                         onChange={({ target }) => setPhone(target.value)}
                     />
                 </div>
-                <div className={stylesCheckoutForm.input}>
+                <div className={styles.input}>
                     <label htmlFor="">Email:</label>
                     <input type="email" 
                         value={email}
                         onChange={({ target }) => setEmail(target.value)}
                     />
                 </div>
-                <div className={stylesCheckoutForm.button}>
+                <div className={styles.button}>
                     <input type="submit" value="Finalizar compra"/>
                 </div>
             </form>

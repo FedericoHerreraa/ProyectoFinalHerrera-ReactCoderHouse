@@ -1,6 +1,6 @@
 import { useState } from "react"
 import ItemCount from "../ItemCount/ItemCount"
-import stylesItemDetail from './ItemDetail.module.css'
+import styles from './ItemDetail.module.css'
 import { Link } from "react-router-dom"
 import { useCart } from "../../../context/CartContext"
 
@@ -21,26 +21,26 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
 
     
     return (
-        <article className={stylesItemDetail.container}>
-            <div className={stylesItemDetail.titleImg}>
-                <div className={stylesItemDetail.name}>
+        <article className={styles.container}>
+            <div className={styles.titleImg}>
+                <div className={styles.name}>
                     <h3>{name}</h3>
                 </div>
-                <div className={stylesItemDetail.containerImg}>
-                    <img className={stylesItemDetail.img} src={img}/>
+                <div className={styles.containerImg}>
+                    <img className={styles.img} src={img}/>
                 </div>
             </div>
-            <div className={stylesItemDetail.containerDetail}>
-                <div className={stylesItemDetail.information}>
-                    <p><b className={stylesItemDetail.options}>Marca: </b>{category}</p>
-                    <p><b className={stylesItemDetail.options}>Precio: </b>{price}</p>
-                    <p><b className={stylesItemDetail.options}>Descripcion: </b>{description}</p>
-                    <p><b className={stylesItemDetail.options}>Stock disponible: </b>{stock}</p>
+            <div className={styles.containerDetail}>
+                <div className={styles.information}>
+                    <p><b className={styles.options}>Marca: </b>{category}</p>
+                    <p><b className={styles.options}>Precio: </b>{price}</p>
+                    <p><b className={styles.options}>Descripcion: </b>{description}</p>
+                    <p><b className={styles.options}>Stock disponible: </b>{stock}</p>
                 </div>
-                <div className={stylesItemDetail.containerCarrito}>
+                <div className={styles.containerCarrito}>
                     {
                         quantity > 0 ? (
-                            <Link to={'/cart'} className={stylesItemDetail.option}>Terminar compra</Link>
+                            <Link to={'/cart'} className={styles.option}>Terminar compra</Link>
                         ) : (
                             <ItemCount initial={0} stock={stock} onAdd={handleOnAdd}/>
                         )

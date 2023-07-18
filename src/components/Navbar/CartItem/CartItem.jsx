@@ -1,5 +1,5 @@
 import { useCart } from "../../../context/CartContext";
-import stylesCartItem from './CartItem.module.css'
+import styles from './CartItem.module.css'
 
 
 const CartItem = ({ id, name, quantity, price }) => {
@@ -7,11 +7,11 @@ const CartItem = ({ id, name, quantity, price }) => {
     let newPrice = price * quantity
 
     return (
-        <div key={id} className={stylesCartItem.container}>
-            <div className={stylesCartItem.productInfo}>
+        <div key={id} className={styles.container}>
+            <div className={styles.productInfo}>
                 <h4>{name}</h4>
             </div>
-            <div className={stylesCartItem.productElse}>
+            <div className={styles.productElse}>
                 <p>Cantidad: {quantity}</p>
                 {
                     quantity > 1 ? (
@@ -21,7 +21,7 @@ const CartItem = ({ id, name, quantity, price }) => {
                     )
                 }
             </div>
-            <div className={stylesCartItem.buttonContainer}>
+            <div className={styles.buttonContainer}>
                 <button onClick={() => removeItem(id)}>X</button>
             </div>
         </div>

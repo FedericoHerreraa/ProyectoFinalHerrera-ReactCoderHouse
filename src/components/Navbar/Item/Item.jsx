@@ -1,19 +1,19 @@
-import stylesItem from './Item.module.css'
-import { Link, useNavigate } from 'react-router-dom';
+import styles from './Item.module.css'
+import { useNavigate } from 'react-router-dom';
 
 
 const Item = ({ id,img,name,price }) => {
     const navigate = useNavigate()
     return (
-        <div onClick={() => navigate(`/item/${id}`)} className={stylesItem.container}>
+        <div onClick={() => navigate(`/item/${id}`)} className={styles.container}>
             <div key={id}>
-                <div className={stylesItem.containerProduct}>
+                <div className={styles.containerProduct}>
                     <div>
-                        <img className={stylesItem.img} src={img}/>
+                        <img className={styles.img} src={img}/>
                     </div>
-                    <div className={stylesItem.namePrice}>
-                        <h4 className={stylesItem.name} >{name}</h4>
-                        <p className={stylesItem.price}>Precio: ${price}</p>
+                    <div className={styles.namePrice}>
+                        <h4 className={styles.name} >{name}</h4>
+                        <p className={styles.price}>Precio: ${price}</p>
                     </div>
                 </div>
             </div>

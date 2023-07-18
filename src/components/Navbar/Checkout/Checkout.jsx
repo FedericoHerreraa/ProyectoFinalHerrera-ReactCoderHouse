@@ -2,7 +2,7 @@ import { addDoc, collection, documentId, getDocs, query, where, writeBatch } fro
 import 'firebase/firestore';
 import { useCart } from "../../../context/CartContext"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
-import stylesCheckout from './Checkout.module.css'
+import styles from './Checkout.module.css'
 import { db } from "../../../service/firebase/firebaseConfig"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
@@ -73,8 +73,8 @@ const Checkout = () => {
 
     if (loading) {
         return (
-            <div className={stylesCheckout.loading}>
-                <div className={stylesCheckout.spinner}>
+            <div className={styles.loading}>
+                <div className={styles.spinner}>
                     <div className="spinner-border" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div>
@@ -85,7 +85,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h1 className={stylesCheckout.title}>Checkout</h1>
+            <h1 className={styles.title}>Checkout</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     )

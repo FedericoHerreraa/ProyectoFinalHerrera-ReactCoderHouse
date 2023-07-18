@@ -1,5 +1,5 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
-import stylesItemDetailContainer from './ItemDetailContainer.module.css'
+import styles from './ItemDetailContainer.module.css'
 import { useParams } from "react-router-dom"
 import { getProductsByCategory } from "../../../service/firebase/firestore/products"
 import { useAsync } from "../../../hooks/useAsync"
@@ -13,8 +13,8 @@ const ItemDetailContainer = () => {
 
     if (loading) {
         return (
-            <div className={stylesItemDetailContainer.loading}>
-                <div className={stylesItemDetailContainer.spinner}>
+            <div className={styles.loading}>
+                <div className={styles.spinner}>
                     <div className="spinner-border" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div>
@@ -28,9 +28,9 @@ const ItemDetailContainer = () => {
     }
 
     return (
-        <div className={stylesItemDetailContainer.containerAll}>
-            <h2 className={stylesItemDetailContainer.title}>Detalle de producto</h2>
-            <div className={stylesItemDetailContainer.container}>
+        <div className={styles.containerAll}>
+            <h2 className={styles.title}>Detalle de producto</h2>
+            <div className={styles.container}>
                 <ItemDetail {...products}/>
             </div>
         </div>
