@@ -1,4 +1,5 @@
 import { addDoc, collection, documentId, getDocs, query, where, writeBatch } from "firebase/firestore"
+import 'firebase/firestore';
 import { useCart } from "../../../context/CartContext"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
 import stylesCheckout from './Checkout.module.css'
