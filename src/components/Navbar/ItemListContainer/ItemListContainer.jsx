@@ -1,5 +1,5 @@
 import ItemList from '../ItemList/ItemList'
-import stylesItemListContainer from './itemListContainer.module.css'
+import stylesitemlistcontainer from './itemListContainer.module.css'
 import { useParams } from "react-router-dom"
 import { getProducts } from "../../../service/firebase/firestore/products"
 import { useAsync } from "../../../hooks/useAsync"
@@ -13,8 +13,8 @@ const ItemListContainer = () => {
 
     if (loading) {
         return (
-            <div className={stylesItemListContainer.loading}>
-                <div className={stylesItemListContainer.spinner}>
+            <div className={stylesitemlistcontainer.loading}>
+                <div className={stylesitemlistcontainer.spinner}>
                     <div className="spinner-border" role="status">
                         <span className="visually-hidden">Loading...</span>
                     </div>
@@ -28,9 +28,9 @@ const ItemListContainer = () => {
     }
 
     return (
-        <div className={stylesItemListContainer.container}>
-            <div className={stylesItemListContainer.searchBarContainer}>
-                <input type="search" placeholder="Buscar productos" className={stylesItemListContainer.searchBar}></input>
+        <div className={stylesitemlistcontainer.container}>
+            <div className={stylesitemlistcontainer.searchBarContainer}>
+                <input type="search" placeholder="Buscar productos" className={stylesitemlistcontainer.searchBar}></input>
             </div>
             <div>
                 <ItemList products={products}/>
