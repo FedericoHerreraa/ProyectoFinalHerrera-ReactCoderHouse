@@ -24,7 +24,7 @@ export function AuthProvider ({ children }) {
             setUser(currentUser)
             setLoading(false)
         })
-    })
+    }, [])
 
     return (
         <context.Provider value={{ signUp, login, user, logout, loading }}>

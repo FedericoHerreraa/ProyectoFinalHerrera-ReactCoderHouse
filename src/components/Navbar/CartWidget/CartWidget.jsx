@@ -7,7 +7,6 @@ import { BsCartFill } from "react-icons/bs"
 const CartWidget = () => {
     const { totalQuantity } = useCart()
     const total = totalQuantity()
-    console.log(total)
 
     return (
         <div className={styles.carrito}>

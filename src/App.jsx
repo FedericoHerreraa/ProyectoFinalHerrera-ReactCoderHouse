@@ -3,7 +3,6 @@ import ItemListContainer from './components/Navbar/ItemListContainer/ItemListCon
 import ItemDetailContainer from './components/Navbar/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
-import stylesApp from './App.module.css'
 import Cart from './components/Navbar/Cart/Cart';
 import Aside from './components/Navbar/Aside/Aside';
 import Footer from './components/Navbar/Footer/Footer';

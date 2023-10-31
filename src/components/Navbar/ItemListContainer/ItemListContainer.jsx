@@ -28,7 +28,7 @@ const ItemListContainer = () => {
     }
 
     return (
-        <div className="container">
+        <div className='container'>
             <div className="searchBarContainer">
                 <input type="search" placeholder="Buscar productos" className="searchBar"></input>
             </div>

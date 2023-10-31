@@ -21,7 +21,7 @@ export const getProducts = (categoryId) => {
 
 }
 
-export const getProductsByCategory = (productId) => {
+export const getProductByCategory = (productId) => {
     const productRef = doc(db, 'products', productId)
     return getDoc(productRef)
         .then(res => {
