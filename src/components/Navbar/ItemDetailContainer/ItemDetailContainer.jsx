@@ -1,7 +1,7 @@
 import ItemDetail from "../ItemDetail/ItemDetail"
 import styles from './ItemDetailContainer.module.css'
 import { useParams } from "react-router-dom"
-import { getProductsByCategory } from "../../../service/firebase/firestore/products"
+import { getProductsByCategory } from "../../service/firebase/firestore/products"
 import { useAsync } from "../../../hooks/useAsync"
 
 const ItemDetailContainer = () => {
