@@ -1,0 +1,26 @@
+
+
+.container {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    text-decoration: none;
+    background-color: #4a4a4a;
+    padding: 2px 15px 2px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.option {
+    text-decoration: none;
+    padding: 2px 15px 2px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.title {
+    color: grey;
+}

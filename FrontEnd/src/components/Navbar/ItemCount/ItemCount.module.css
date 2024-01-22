@@ -1,0 +1,58 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerCount {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.carritoCount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+
+.carritoCount p {
+    margin-top: 16px;
+}
+
+.carritoCount button {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    border: none;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.product {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
+}
+.buttonCarrito {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+
+}

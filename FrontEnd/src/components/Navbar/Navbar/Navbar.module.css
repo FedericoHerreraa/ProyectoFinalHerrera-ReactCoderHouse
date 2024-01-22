@@ -1,0 +1,45 @@
+
+.nav {
+    background-color: #adadad;
+    display: flex;
+    width: 89%;
+    min-height: 80px;
+    justify-content: space-between;
+    box-shadow: 0px 7px 150px 0px;
+    align-items: center;
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    z-index: 200;
+    /* border-bottom: 1px solid grey; */
+    opacity: 0.9;
+}
+
+.navTitle {
+    display: flex;
+    align-items: center;
+    color: #47331f;
+    margin-left: 10px;
+}
+
+.navCarrito {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title {
+    text-decoration: none;
+    /* color: #7177a3; */
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+
+.img {
+    margin-right: 20px;
+}
+
+

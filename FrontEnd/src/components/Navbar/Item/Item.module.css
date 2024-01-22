@@ -1,0 +1,78 @@
+
+.container {
+    text-decoration: non;
+}
+
+.containerProduct {
+    background-color: #f5f5f5;
+    border: 1px solid #edebeb;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    margin-bottom: 30px;
+    width: 16rem;
+}
+
+.containerProduct:hover {
+    box-shadow: 0px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.img {
+    width: 15rem;
+    height: 14rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 9px;
+    margin-bottom: 10px;
+}
+
+.namePrice {
+    padding-bottom: 30px;
+}
+
+.name {
+    font-size: 15px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.price {
+    font-size: 15px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding-bottom: 10px;
+}
+
+.button {
+    padding: 7px 10px 7px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #466187 ;
+    text-decoration: none;
+    color: white;
+
+}
+
+.button:hover {
+    background-color: #26364d;
+
+}

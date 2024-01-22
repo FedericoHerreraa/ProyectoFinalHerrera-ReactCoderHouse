@@ -1,0 +1,53 @@
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7c8ea1;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.productInfo h4 {
+    font-size: 18px;
+}
+
+.productElse {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.productElse p {
+    margin-right: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+.buttonContainer button {
+    background-color: #ab9a95;
+    border: 1px solid white;
+    border-radius: 4px;
+
+}
+
+.buttonContainer button:hover {
+    cursor: pointer;
+}

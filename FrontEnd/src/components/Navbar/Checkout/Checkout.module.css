@@ -1,0 +1,29 @@
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    color: grey;
+    font-weight: 300;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-left: 580px;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
+.spinner {
+    padding-top: 100px;
+}

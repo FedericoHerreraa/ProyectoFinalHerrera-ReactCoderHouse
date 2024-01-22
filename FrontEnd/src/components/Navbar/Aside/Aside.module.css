@@ -1,0 +1,62 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #878787; */
+    background-color: #0a0a0a;
+    width: 150px;
+    height: 200vh;
+    position: absolute;
+    align-items: flex-start;
+    border-right: 1px solid black;
+    position: fixed;
+    margin-top: 0px;
+    z-index: 200;
+}
+
+.subContainer {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    margin: 15px 0px 0px 15px;
+
+}
+
+.container img {
+    color: white;
+}
+
+.options {
+    margin-right: 16px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.options:hover {
+    text-decoration: underline;
+}
+
+.containerFilter {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.containerLink {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.buttonCarrito {
+    display: flex;
+    margin-right: 50px;
+}
